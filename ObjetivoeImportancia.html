@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia Actual</title>
+    <link rel="stylesheet" href="./diseñosCSS/styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="barra-navegacion">
+        <div class="navbar">
+            <ul class="navbar-row">
+                <a href="index.html" class="btnN">Constelaciones Familiares</a>
+                <a href="FamiliasdeOrigen.html" class="btnN">Familia de Origen</a>
+                <a href="FamiliaActual.html" class="btnN">Familia Actual</a>
+                <a href="MásFamilia.html" class="btnN">Mas alla de las familias</a>
+                <a href="SobreMetodos.html" class="btnN">Sobre Métodos</a>
+                <a href="nosotros.html" class="btnN">Acerca de Nosotros</a>
+            </ul>
+            <ul class="navbar-row abajo">
+                <a href="Personal.html" class="btnN">Personal</a>
+                <a href="ObjetivoeImportancia.html" class="btnN activate">Objetivo e Importancia</a>
+                <a href="Servicios.html" class="btnN">Servicios</a>
+                <a href="valores.html" class="btnN">Valores</a>
+                <a href="horarios.html" class="btnN">Horarios</a>
+                <a href="descarga.html" class="btnN">Aplicacion</a>
+            </ul>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <span id="icon-open">&#9660;</span> <!-- Flecha hacia abajo -->
+            <span id="icon-close">&#9650;</span> <!-- Flecha hacia arriba -->
+        </div>
+    </div>
+    <div class="con-objetivo">
+        <div class="imagen-objetivo">
+            <img src="https://i.pinimg.com/564x/3a/77/35/3a773587a68f135fd9996ad8c630c33f.jpg" class="icono-objetivos">
+            </img>
+        </div>
+        <div class="texto-objetivo">
+            <div class="titulo-Objetivo"> Objetivo </div>
+            <div class="cuerpo-Objetivo">
+                En Fundación Buscando tus Raíces, nos dedicamos a proporcionar apoyo especializado para fortalecer
+                relaciones
+                familiares y resolver conflictos de manera constructiva. Nuestro objetivo es ofrecer recursos y
+                orientación
+                personalizada para ayudar a las familias a superar desafíos emocionales y mejorar su bienestar general.
+                Nos
+                comprometemos a crear un ambiente seguro y comprensivo que promueva relaciones familiares saludables y
+                duraderas.
+            </div>
+        </div>
+    </div>
+    <div class="con-importancia">
+        <div class="imagen-objetivo">
+            <img src="https://i.pinimg.com/564x/3b/27/4d/3b274d35dc4f10aaebf06d02e7fb0a97.jpg" class="icono-objetivos">
+            </img>
+        </div>
+        <div class="texto-objetivo">
+            <div class="titulo-Objetivo-Importancia"> Importancia </div>
+            <div class="cuerpo-Objetivo">
+                Fundación Buscando tus Raíces juega un papel crucial al proporcionar apoyo especializado para fortalecer
+                relaciones
+                familiares y resolver conflictos de manera constructiva. Nos dedicamos a mejorar el bienestar emocional
+                de
+                las
+                familias al ofrecer recursos y orientación personalizada, creando un ambiente seguro que promueve
+                relaciones
+                familiares saludables y duraderas. Nuestro compromiso es facilitar un entorno donde cada individuo pueda
+                desarrollar relaciones familiares positivas y resilientes, contribuyendo así al bienestar y la armonía
+                dentro de
+                las familias.
+                </ </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contacto">
+            <h1>Agenda tu cita</h1>
+            <p>Aceptamos todo tipo de pagos</p>
+            <i class="fas fa-money-bill-wave"></i> 
+            <i class="fas fa-credit-card"></i> 
+            <i class="fas fa-credit-card-alt"></i> 
+            <i class="fas fa-university"></i>
+        </div>
+        <div class="contacto">
+            <h1 class="tit">Buscando tus Raíces</h1>
+        </div>
+        <div class="cont-btn-contacto">
+            <h2> Contactanos</h2>
+            <!-- Ajustar el número de WhatsApp con el mismo número -->
+            <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=593996866268">Whatsapp</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu-icon').onclick = function () {
+            var nav = document.querySelector('.barra-navegacion');
+            nav.classList.toggle('active');
+            document.getElementById('icon-open').classList.toggle('active');
+            document.getElementById('icon-close').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

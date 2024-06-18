@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios de Atención - Fundación Buscando tus Raíces</title>
+    <link rel="stylesheet" href="./diseñosCSS/styles2.css">
+    <!-- Incluir FontAwesome con URL corregida -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos específicos para la pestaña Horarios */
+        .horarios {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px;
+            text-align: center; /* Centrar todo el contenido */
+        }
+
+        .horarios h2 {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .horarios p {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .horarios .horario-icon {
+            font-size: 3rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .horarios .contact-info {
+            margin-bottom: 2rem;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+
+        .horarios .contact-info p {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .horarios .pagos {
+            margin-bottom: 2rem;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+
+        .horarios .pagos h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .horarios .pagos ul {
+            margin-bottom: 1rem;
+        }
+
+        .horarios .pagos ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            list-style-type: none; /* Eliminar los puntos de la lista */
+        }
+
+        .horarios .pagos ul li i {
+            margin-right: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barra-navegacion">
+        <div class="navbar">
+            <ul class="navbar-row">
+                <a href="index.html" class="btnN">Constelaciones Familiares</a>
+                <a href="FamiliasdeOrigen.html" class="btnN">Familia de Origen</a>
+                <a href="FamiliaActual.html" class="btnN">Familia Actual</a>
+                <a href="MásFamilia.html" class="btnN">Mas alla de las familias</a>
+                <a href="SobreMetodos.html" class="btnN">Sobre Métodos</a>
+                <a href="nosotros.html" class="btnN">Acerca de Nosotros</a>
+            </ul>
+            <ul class="navbar-row abajo">
+                <a href="Personal.html" class="btnN">Personal</a>
+                <a href="ObjetivoeImportancia.html" class="btnN">Objetivo e Importancia</a>
+                <a href="Servicios.html" class="btnN">Servicios</a>
+                <a href="valores.html" class="btnN">Valores</a>
+                <a href="horarios.html" class="btnN activate">Horarios</a>
+                <a href="descarga.html" class="btnN">Aplicacion</a>
+            </ul>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <span id="icon-open">&#9660;</span>
+            <span id="icon-close">&#9650;</span>
+        </div>
+    </div>
+
+    <div class="horarios">
+        <h2>Horarios de Atención</h2>
+        <p>
+            Lunes a sábado:
+            <br>
+            8:00 A.M - 16:00 P.M
+        </p>
+        <div class="horario-icon">
+            <i class="fas fa-clock"></i>
+        </div>
+        <div class="contact-info">
+            <p>Agenda tu cita</p>
+            <p>Teléfono celular: <a href="tel:+593996866268">0996866268</a></p>
+            <p>Teléfono convencional: 284-3197</p>
+            <p>Correo electrónico: <a href="mailto:fundaciónbtraices@sanacrece.com.ec">fundaciónbtraices@sanacrece.com.ec</a></p>
+        </div>
+        <div class="pagos">
+            <h3>Pagos</h3>
+            <ul>
+                <li><i class="fas fa-money-bill-wave"></i> Efectivo</li>
+                <li><i class="fas fa-credit-card"></i> Tarjeta de crédito</li>
+                <li><i class="fas fa-credit-card"></i> Tarjeta de débito</li>
+                <li><i class="fas fa-university"></i> Transferencias bancarias</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contacto">
+            <h1>Agenda tu cita</h1>
+            <p>Aceptamos todo tipo de pagos</p>
+            <i class="fas fa-money-bill-wave"></i> 
+            <i class="fas fa-credit-card"></i> 
+            <i class="fas fa-credit-card-alt"></i> 
+            <i class="fas fa-university"></i>
+        </div>
+        <div class="contacto">
+            <h1 class="tit">Buscando tus Raíces</h1>
+        </div>
+        <div class="cont-btn-contacto">
+            <h2> Contactanos</h2>
+            <!-- Ajustar el número de WhatsApp con el mismo número -->
+            <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=593996866268">Whatsapp</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-icon').onclick = function () {
+            var nav = document.querySelector('.barra-navegacion');
+            nav.classList.toggle('active');
+            document.getElementById('icon-open').classList.toggle('active');
+            document.getElementById('icon-close').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Métodos</title>
+    <link rel="stylesheet" href="./diseñosCSS/styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos específicos para la pestaña Valores */
+        .valores {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px;
+            text-align: center; /* Centrar todo el contenido */
+        }
+
+        .valores h2 {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .valores p {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .valores ul {
+            margin-bottom: 2rem;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+
+        .valores ul li {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .cartas-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .carta {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(40% - 20px); /* Ajustar el ancho de las cartas para que estén en columnas */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .carta img {
+            width: 300px;
+            max-width: 100%;
+            height: 270px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .carta h3 {
+            margin-top: 0;
+        }
+
+        .carta h4 {
+            margin-bottom: 10px;
+        }
+
+        .carta p {
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            .carta {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barra-navegacion">
+        <div class="navbar">
+            <ul class="navbar-row">
+                <a href="index.html" class="btnN">Constelaciones Familiares</a>
+                <a href="FamiliasdeOrigen.html" class="btnN">Familia de Origen</a>
+                <a href="FamiliaActual.html" class="btnN">Familia Actual</a>
+                <a href="MásFamilia.html" class="btnN">Mas alla de las familias</a>
+                <a href="SobreMetodos.html" class="btnN">Sobre Métodos</a>
+                <a href="nosotros.html" class="btnN">Acerca de Nosotros</a>
+            </ul>
+            <ul class="navbar-row abajo">
+                <a href="Personal.html" class="btnN">Personal</a>
+                <a href="ObjetivoeImportancia.html" class="btnN">Objetivo e Importancia</a>
+                <a href="Servicios.html" class="btnN">Servicios</a>
+                <a href="valores.html" class="btnN activate">Valores</a>
+                <a href="horarios.html" class="btnN">Horarios</a>
+                <a href="descarga.html" class="btnN">Aplicacion</a>
+            </ul>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <span id="icon-open">&#9660;</span>
+            <span id="icon-close">&#9650;</span>
+        </div>
+    </div>
+
+    <div class="valores">
+        <h2>Valores que tenemos como empresa (terapeutas)</h2>
+        <p>
+            En Fundación Buscando tus Raíces, nos comprometemos firmemente con los siguientes valores que guían nuestra práctica terapéutica:
+        </p>
+        <ul>
+            <li>Confidencialidad</li>
+            <li>Empatía</li>
+            <li>Neutralidad</li>
+            <li>Responsabilidad Ética</li>
+            <li>Responsabilidad Social</li>
+            <li>Integridad</li>
+            <li>Aceptación</li>
+        </ul>
+
+        <h2>¿Sabías qué?</h2>
+        <p>
+            Sabías que contamos con el valioso apoyo de diversos profesionales y organizaciones a nivel mundial. Este respaldo nos permite avanzar en nuestros objetivos y continuar nuestro compromiso con la excelencia y permanecer con el debido acompañamiento para cada persona, familia que nos necesite. Agradecemos profundamente la colaboración y confianza depositada en nuestra labor.
+        </p>
+    </div>
+
+    <!-- Contenedor para las cartas -->
+    <div class="cartas-container">
+        <div class="carta">
+            <h3>Nacional</h3>
+            <img src="./image/drjavier.png" alt="Dr. Javier López">
+            <h4>Dr. Javier López Psicólogo clínico</h4>
+            <p>Su consultorio se encuentra en: Av. Manuelita Sáenz y Victor Hugo, en Ambato, Ecuador</p>
+        </div>
+
+        <div class="carta">
+            <h3>Nacional</h3>
+            <img src="./image/drDavid.png" alt="Dr. David Santana">
+            <h4>Dr. David Santana Psicoterapeuta</h4>
+            <p>Su consultorio "Vida en familia" ubicado: Av. Manuelita Sáenz y Victor Hugo, en Ambato, Ecuador</p>
+        </div>
+
+        <div class="carta">
+            <h3>Internacional</h3>
+            <img src="./image/dralejandra.png" alt="Dr. Alejandra Sanchez">
+            <h4>Dr. Alejandra Sanchez Psicóloga clínica</h4>
+            <p>Especialista en Neurociencia y Desarrollo Personal, y en su consulta atiende de manera online. Su intervención se basa en el enfoque cognitivo-conductual junto a otras terapias de eficacia.</p>
+        </div>
+
+        <div class="carta">
+            <h3>Chile</h3>
+            <img src="./image/drIrene.png" alt="Dr. Irene Gonzales">
+            <h4>Dr. Irene Gonzales Psicóloga</h4>
+            <p>Su intervención ofrece en línea; y entre sus especialidades destacadas están el tratamiento de dificultades como conflictos familiares, trastornos de ansiedad, baja autoestima y crisis surgidas en la pareja.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contacto">
+            <h1>Agenda tu cita</h1>
+            <p>Aceptamos todo tipo de pagos</p>
+            <i class="fas fa-money-bill-wave"></i> 
+            <i class="fas fa-credit-card"></i> 
+            <i class="fas fa-credit-card-alt"></i> 
+            <i class="fas fa-university"></i>
+        </div>
+        <div class="contacto">
+            <h1 class="tit">Buscando tus Raíces</h1>
+        </div>
+        <div class="cont-btn-contacto">
+            <h2> Contactanos</h2>
+            <!-- Ajustar el número de WhatsApp con el mismo número -->
+            <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=593996866268">Whatsapp</a>
+            <a class="btn-contacto" href="https://www.tiktok.com/@">TikTok</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-icon').onclick = function () {
+            var nav = document.querySelector('.barra-navegacion');
+            nav.classList.toggle('active');
+            document.getElementById('icon-open').classList.toggle('active');
+            document.getElementById('icon-close').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

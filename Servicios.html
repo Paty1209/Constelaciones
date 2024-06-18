@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Métodos</title>
+    <link rel="stylesheet" href="./diseñosCSS/styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos del modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barra-navegacion">
+        <div class="navbar">
+            <ul class="navbar-row">
+                <a href="index.html" class="btnN">Constelaciones Familiares</a>
+                <a href="FamiliasdeOrigen.html" class="btnN">Familia de Origen</a>
+                <a href="FamiliaActual.html" class="btnN">Familia Actual</a>
+                <a href="MásFamilia.html" class="btnN">Mas alla de las familias</a>
+                <a href="SobreMetodos.html" class="btnN">Sobre Métodos</a>
+                <a href="nosotros.html" class="btnN">Acerca de Nosotros</a>
+            </ul>
+            <ul class="navbar-row abajo">
+                <a href="Personal.html" class="btnN">Personal</a>
+                <a href="ObjetivoeImportancia.html" class="btnN">Objetivo e Importancia</a>
+                <a href="Servicios.html" class="btnN activate">Servicios</a>
+                <a href="valores.html" class="btnN">Valores</a>
+                <a href="horarios.html" class="btnN">Horarios</a>
+                <a href="descarga.html" class="btnN">Aplicacion</a>
+            </ul>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <span id="icon-open">&#9660;</span>
+            <span id="icon-close">&#9650;</span>
+        </div>
+    </div>
+
+    <div class="titulo-servicios">
+        NUESTROS SERVICIOS
+    </div>
+
+    <div class="introduccion-Servicios">
+        En Fundación Buscando tus Raíces, entendemos los desafíos únicos que pueden surgir en la vida familiar.
+        Ofrecemos servicios de apoyo y orientación para ayudarte a superar conflictos, mejorar la comunicación y
+        fortalecer los lazos familiares.
+    </div>
+
+    <div class="contenido-servicios">
+        <div class="text-content-iz">
+            <div class="servicio-individual" id="modal-grupos-vulnerables">
+                <img src="https://static.vecteezy.com/system/resources/previews/011/480/833/non_2x/poverty-icon-design-free-vector.jpg"
+                    style="width: 80px; height: 80px;" class="icono-circular" onclick="openModal('modal-grupos-vulnerables')">
+                </img>
+                <div class="servicio-texto">
+                    Grupos Vulnerables<br />
+                    $0
+                </div>
+            </div>
+
+            <div class="servicio-individual" id="modal-terapia-individual">
+                <img src="https://static.vecteezy.com/system/resources/previews/005/276/776/non_2x/logo-icon-person-on-white-background-free-vector.jpg"
+                    style="width: 80px; height: 80px;" class="icono-circular" onclick="openModal('modal-terapia-individual')">
+                </img>
+                <div class="servicio-texto">
+                    Terapia Individual<br />
+                    $25
+                </div>
+            </div>
+
+            <div class="servicio-individual" id="modal-terapia-en-parejas">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJYH-dw0-eHiLjiV4KIylUzk4q8nil186NbxyiBlF8WDiG1TSNjxoBvahQElBnQuEXd6U&usqp=CAU"
+                    style="width: 80px; height: 80px;" class="icono-circular" onclick="openModal('modal-terapia-en-parejas')">
+                </img>
+                <div class="servicio-texto">
+                    Terapia en Parejas<br />
+                    $50
+                </div>
+            </div>
+
+            <div class="servicio-individual" id="modal-terapia-en-familia">
+                <img src="https://static.vecteezy.com/system/resources/previews/008/630/852/non_2x/family-family-icon-design-isolated-on-white-background-family-silhouette-family-icon-design-illustration-people-icon-sign-free-vector.jpg"
+                    style="width: 80px; height: 80px;" class="icono-circular" onclick="openModal('modal-terapia-en-familia')">
+                </img>
+                <div class="servicio-texto">
+                    Terapia en Familia<br />
+                    $75
+                </div>
+            </div>
+        </div>
+
+        <div class="img-servicios">
+            <img src="./image/imgServicios.png" alt="servicios"></img>
+        </div>
+    </div>
+
+    <!-- Modal para Grupos Vulnerables -->
+    <div id="modal-grupos-vulnerables-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-grupos-vulnerables')">X</span>
+            <h2>Grupos Vulnerables</h2>
+            <p>Porque esta población enfrenta mayores riesgos de sufrir discriminación, exclusión o falta de acceso a oportunidades debido a características específicas como su condición económica, social, cultural, de salud, o su estatus migratorio, entre otros.</p>
+        </div>
+    </div>
+
+    <!-- Modal para Terapia Individual -->
+    <div id="modal-terapia-individual-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-terapia-individual')">X</span>
+            <h2>Terapia Individual</h2>
+            <p>Porque eres valioso y por qué tu vida nos importa, esta terapia es poderosa para promover tu salud mental, tu autoconocimiento y tu bienestar general, proporcionaremos un espacio seguro y confidencial para explorar y abordar problemas personales, que pueden llevarte a una vida más plena y satisfactoria.</p>
+        </div>
+    </div>
+
+    <!-- Modal para Terapia en Parejas -->
+    <div id="modal-terapia-en-parejas-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-terapia-en-parejas')">X</span>
+            <h2>Terapia en Parejas</h2>
+            <p>La terapia en pareja ofrece un espacio seguro y guiado para mejorar la comunicación y fortalecer la relación entre dos personas. A través de sesiones diseñadas específicamente para abordar los desafíos y conflictos comunes en las relaciones, se busca restaurar la conexión emocional y promover un entendimiento más profundo. Los objetivos suelen incluir la resolución de conflictos, el fortalecimiento de la intimidad y la colaboración en la construcción de un futuro compartido.</p>
+        </div>
+    </div>
+
+    <!-- Modal para Terapia en Familia -->
+    <div id="modal-terapia-en-familia-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal('modal-terapia-en-familia')">X</span>
+            <h2>Terapia en Familia</h2>
+            <p>Porque la familia es el pilar fundamental de una persona, es crucial el bienestar emocional y psicológico de cada miembro, promoviendo relaciones más saludables, una comunicación efectiva y un entorno de apoyo mutuo. </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contacto">
+            <h1>Agenda tu cita</h1>
+            <p>Aceptamos todo tipo de pagos</p>
+            <i class="fas fa-money-bill-wave"></i> 
+            <i class="fas fa-credit-card"></i> 
+            <i class="fas fa-credit-card-alt"></i> 
+            <i class="fas fa-university"></i>
+        </div>
+        <div class="contacto">
+            <h1 class="tit">Buscando tus Raíces</h1>
+        </div>
+        <div class="cont-btn-contacto">
+            <h2> Contactanos</h2>
+            <!-- Ajustar el número de WhatsApp con el mismo número -->
+            <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=593996866268">Whatsapp</a>
+        </div>
+    </div>
+
+    <script>
+        // Función para abrir el modal
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId + '-modal');
+            modal.style.display = 'block';
+        }
+
+        // Función para cerrar el modal
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId + '-modal');
+            modal.style.display = 'none';
+        }
+
+        document.getElementById('menu-icon').onclick = function () {
+            var nav = document.querySelector('.barra-navegacion');
+            nav.classList.toggle('active');
+            document.getElementById('icon-open').classList.toggle('active');
+            document.getElementById('icon-close').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

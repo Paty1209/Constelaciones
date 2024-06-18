@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familia de Origen</title>
+    <link rel="stylesheet" href="./diseñosCSS/styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .video-container {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .video-container video {
+            width: 500px; /* Ajusta el ancho del video */
+            height: auto;
+        }
+
+        .video-details {
+            margin-top: 10px;
+        }
+
+        .video-details p {
+            margin-bottom: 5px;
+            font-size: 35px;
+        }
+
+        .video-container button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .video-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .informes {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="barra-navegacion">
+        <div class="navbar">
+            <ul class="navbar-row">
+                <a href="index.html" class="btnN">Constelaciones Familiares</a>
+                <a href="FamiliasdeOrigen.html" class="btnN">Familia de Origen</a>
+                <a href="FamiliaActual.html" class="btnN">Familia Actual</a>
+                <a href="MásFamilia.html" class="btnN">Mas alla de las familias</a>
+                <a href="SobreMetodos.html" class="btnN">Sobre Métodos</a>
+                <a href="nosotros.html" class="btnN">Acerca de Nosotros</a>
+            </ul>
+            <ul class="navbar-row abajo">
+                <a href="Personal.html" class="btnN activate">Personal</a>
+                <a href="ObjetivoeImportancia.html" class="btnN">Objetivo e Importancia</a>
+                <a href="Servicios.html" class="btnN">Servicios</a>
+                <a href="valores.html" class="btnN">Valores</a>
+                <a href="horarios.html" class="btnN">Horarios</a>
+                <a href="descarga.html" class="btnN">Aplicacion</a>
+            </ul>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <span id="icon-open">&#9660;</span> <!-- Flecha hacia abajo -->
+            <span id="icon-close">&#9650;</span> <!-- Flecha hacia arriba -->
+        </div>
+    </div>
+
+    <div class="informes">
+        <h1>Curriculums</h1>
+    </div>
+
+    <div class="videos">
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="./videos/Karla.mp4" type="video/mp4">
+            </video>
+            <div class="video-details">
+                <p>Karla</p>
+                <button onclick="window.open('./documents/Karla.pdf', '_blank')">Hoja de vida</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="./videos/DayanaCordova.mp4" type="video/mp4">
+            </video>
+            <div class="video-details">
+                <p>Dayana Córdova</p>
+                <button onclick="window.open('./documents/DayanaCordova.pdf', '_blank')">Hoja de vida</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="./videos/evelyn.mp4" type="video/mp4">
+            </video>
+            <div class="video-details">
+                <p>Evelyn</p>
+                <button onclick="window.open('./documents/evelyn.pdf', '_blank')">Hoja de vida</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="./videos/karen.mp4" type="video/mp4">
+            </video>
+            <div class="video-details">
+                <p>Karen</p>
+                <button onclick="window.open('./documents/karen.pdf', '_blank')">Hoja de vida</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="./videos/katheryn.mp4" type="video/mp4">
+            </video>
+            <div class="video-details">
+                <p>Katheryn</p>
+                <button onclick="window.open('./documents/katheryn.pdf', '_blank')">Hoja de vida</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="./videos/lady.mp4" type="video/mp4">
+            </video>
+            <div class="video-details">
+                <p>Lady</p>
+                <button onclick="window.open('./documents/lady.pdf', '_blank')">Hoja de vida</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="./videos/Muylema.mp4" type="video/mp4">
+            </video>
+            <div class="video-details">
+                <p>Muylema</p>
+                <button onclick="window.open('./documents/Muylema.pdf', '_blank')">Hoja de vida</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="./videos/Video de WhatsApp 2024-06-14 a las 20.23.02_072a03c4.mp4" type="video/mp4">
+            </video>
+            <div class="video-details">
+                <p>Victoria</p>
+                <button onclick="window.open('./documents/victoria.pdf', '_blank')">Hoja de vida</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contacto">
+            <h1>Agenda tu cita</h1>
+            <p>Aceptamos todo tipo de pagos</p>
+            <i class="fas fa-money-bill-wave"></i> 
+            <i class="fas fa-credit-card"></i> 
+            <i class="fas fa-credit-card-alt"></i> 
+            <i class="fas fa-university"></i>
+        </div>
+        <div class="contacto">
+            <h1 class="tit">Buscando tus Raíces</h1>
+        </div>
+        <div class="cont-btn-contacto">
+            <h2> Contactanos</h2>
+            <!-- Ajustar el número de WhatsApp con el mismo número -->
+            <a class="btn-contacto" href="https://api.whatsapp.com/send/?phone=593996866268">Whatsapp</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menu-icon').onclick = function () {
+            var nav = document.querySelector('.barra-navegacion');
+            nav.classList.toggle('active');
+            document.getElementById('icon-open').classList.toggle('active');
+            document.getElementById('icon-close').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
